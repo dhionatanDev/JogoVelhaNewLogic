@@ -1,3 +1,6 @@
+
+import java.awt.Color;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -14,6 +17,7 @@ public class Resultados extends javax.swing.JFrame {
      */
     public Resultados() {
         initComponents();
+         setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -26,140 +30,216 @@ public class Resultados extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        txtMatrizA = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
-        jLabel4 = new javax.swing.JLabel();
+        txtMatrizB = new javax.swing.JTextArea();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        txtMatrizD = new javax.swing.JTextArea();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        txtMatrizE = new javax.swing.JTextArea();
+        jLabel12 = new javax.swing.JLabel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        txtMatrizF = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtResultado = new javax.swing.JTextArea();
+        txtHexadecimal = new javax.swing.JTextField();
+        txtBinario = new javax.swing.JTextField();
+        txtOctal = new javax.swing.JTextField();
+        jogadorX = new javax.swing.JTextField();
+        jogadorY = new javax.swing.JTextField();
+        txtMatrizC1 = new javax.swing.JScrollPane();
+        txtMatrizC = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(600, 400));
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(600, 400));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jLabel1.setText("Matriz Resultado");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, -1, -1));
 
-        jLabel1.setText("mATRIZ A");
+        jLabel2.setText("Matriz A");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 110, 86, -1));
 
-        jLabel2.setText("mATRIZ A");
+        txtMatrizA.setEditable(false);
+        txtMatrizA.setColumns(20);
+        txtMatrizA.setRows(5);
+        txtMatrizA.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        jScrollPane2.setViewportView(txtMatrizA);
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 800, 70));
 
-        jLabel3.setText("mATRIZ A");
+        jLabel3.setText("Matriz B");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 59, -1));
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jScrollPane3.setViewportView(jTextArea3);
+        txtMatrizB.setEditable(false);
+        txtMatrizB.setColumns(20);
+        txtMatrizB.setRows(5);
+        jScrollPane3.setViewportView(txtMatrizB);
 
-        jLabel4.setText("mATRIZ A");
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 220, 800, 73));
 
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jScrollPane4.setViewportView(jTextArea4);
+        jLabel5.setText("Matriz C - transposta a Matriz A");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 109, 176, -1));
 
-        jButton1.setText("nOVO jOGO");
+        jLabel9.setText("Binário");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 426, 59, -1));
 
-        jButton2.setText("sAIR");
+        jLabel10.setText("Octal");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 518, 59, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(38, 38, 38)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel3))))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(29, 29, 29)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(67, 67, 67)
-                            .addComponent(jLabel1))))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(jLabel4)))
-                        .addGap(75, 75, 75))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(2, 2, 2)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(2, 2, 2)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
-                        .addGap(2, 2, 2)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2)))
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
+        jLabel11.setText("Hexadecimal");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 597, 84, -1));
+
+        txtMatrizD.setEditable(false);
+        txtMatrizD.setColumns(20);
+        txtMatrizD.setRows(5);
+        jScrollPane4.setViewportView(txtMatrizD);
+
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 320, 800, 73));
+
+        jLabel4.setText("Matriz D");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, 59, -1));
+
+        jLabel6.setText("Matriz E");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, 59, -1));
+
+        txtMatrizE.setEditable(false);
+        txtMatrizE.setColumns(20);
+        txtMatrizE.setRows(5);
+        jScrollPane6.setViewportView(txtMatrizE);
+
+        jPanel1.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 800, 73));
+
+        jLabel12.setText("Matriz F");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 500, 59, -1));
+
+        txtMatrizF.setEditable(false);
+        txtMatrizF.setColumns(20);
+        txtMatrizF.setRows(5);
+        jScrollPane12.setViewportView(txtMatrizF);
+
+        jPanel1.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 520, 800, 73));
+
+        jButton2.setText("Sair");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 640, -1, -1));
+
+        jButton1.setText("Jogar Novamente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 640, -1, -1));
+
+        txtResultado.setEditable(false);
+        txtResultado.setColumns(20);
+        txtResultado.setRows(5);
+        jScrollPane1.setViewportView(txtResultado);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, 800, 71));
+
+        txtHexadecimal.setEditable(false);
+        txtHexadecimal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtHexadecimal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, 190, 40));
+
+        txtBinario.setEditable(false);
+        txtBinario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtBinario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 190, 40));
+
+        txtOctal.setEditable(false);
+        txtOctal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtOctal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 190, 40));
+
+        jogadorX.setEditable(false);
+        jogadorX.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jogadorX.setForeground(new java.awt.Color(255, 51, 51));
+        jogadorX.setOpaque(true);
+        jPanel1.add(jogadorX, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 260, 30));
+
+        jogadorY.setEditable(false);
+        jogadorY.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jogadorY.setForeground(new java.awt.Color(0, 0, 255));
+        jogadorY.setOpaque(true);
+        jPanel1.add(jogadorY, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 260, 30));
+
+        txtMatrizC.setEditable(false);
+        txtMatrizC.setColumns(20);
+        txtMatrizC.setRows(5);
+        txtMatrizC1.setViewportView(txtMatrizC);
+
+        jPanel1.add(txtMatrizC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 180, 270));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 101, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1702, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(737, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 41, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 160, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       System.exit(0);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        NovoJogoConfig novo = new NovoJogoConfig();
+
+            novo.setVisible(true);
+            this.dispose();
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+   
+    public void preenchimentoResultado(Controle controle){
+       
+        txtResultado.setText("         "+controle.getR()+"\n"+"Linha 1 "+controle.getA()+"\n"+"\n" +"Linha 2 "+ controle.getB());
+        
+        jogadorX.setText("Jogador 'X' : " + controle.getJogadorX() +"\n " + "Linha1 ");
+        
+        jogadorY.setText("Jogador 'O' : " + controle.getJogadorY()+"\n " + "Linha2 ");
+        
+       
+        txtMatrizA.setText("          "+controle.getR()+"\n"+"Linha 1 "+controle.getsX()+"\n"+"\n" +"Linha 2 "+ controle.getsY());
+        txtMatrizB.setText("          "+controle.getR()+"\n"+"Linha 1 "+controle.getSbX()+"\n"+"\n" +"Linha 2 "+ controle.getSbY());
+        txtMatrizC.setText("Jogador 'X'   Jogador 'O' \n" + controle.getScX());
+        txtMatrizD.setText("          "+controle.getR()+"\n"+"Linha 1 "+controle.getSomaX()+"\n"+"\n" +"Linha 2 "+ controle.getSomaY());
+        txtMatrizE.setText("          "+controle.getR()+"\n"+"Linha 1 "+controle.getSubtracaoX()+"\n"+"\n" +"Linha 2 "+controle.getSubtracaoY());
+        txtMatrizF.setText("          "+controle.getR()+"\n"+"Linha 1 "+controle.getMultiplicacaoX()+"\n"+"\n" +"Linha 2 "+controle.getMultiplicacaoY());
+        txtBinario.setText("          "+controle.getBinario());
+        txtOctal.setText("        "+controle.getOctal());
+        txtHexadecimal.setText("        "+controle.getHexadecial());
+            
+    }    
     /**
      * @param args the command line arguments
      */
@@ -194,22 +274,38 @@ public class Resultados extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JTextField jogadorX;
+    private javax.swing.JTextField jogadorY;
+    private javax.swing.JTextField txtBinario;
+    private javax.swing.JTextField txtHexadecimal;
+    private javax.swing.JTextArea txtMatrizA;
+    private javax.swing.JTextArea txtMatrizB;
+    private javax.swing.JTextArea txtMatrizC;
+    private javax.swing.JScrollPane txtMatrizC1;
+    private javax.swing.JTextArea txtMatrizD;
+    private javax.swing.JTextArea txtMatrizE;
+    private javax.swing.JTextArea txtMatrizF;
+    private javax.swing.JTextField txtOctal;
+    private javax.swing.JTextArea txtResultado;
     // End of variables declaration//GEN-END:variables
 }
